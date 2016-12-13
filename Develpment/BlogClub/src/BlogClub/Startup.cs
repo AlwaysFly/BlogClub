@@ -33,6 +33,7 @@ namespace BlogClub
         {
             services.AddMvc();
             services.AddOptions();
+            
             //  services.AddDbContext
         }
 
@@ -49,6 +50,8 @@ namespace BlogClub
             {
                 app.UseExceptionHandler("Home/Error");
             }
+
+         
 
             app.UseMvc(routes =>
             {

@@ -13,6 +13,7 @@ namespace BlogClub.Controllers
         // GET: /<controller>/
         public IActionResult Index(long Id)
         {
+            
             return View(Id);
         }
     }
