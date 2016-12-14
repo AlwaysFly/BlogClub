@@ -32,7 +32,7 @@ namespace BlogClub
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddOptions();
+          //  services.AddOptions();
             
             //  services.AddDbContext
         }
