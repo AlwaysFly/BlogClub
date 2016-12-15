@@ -10,7 +10,9 @@
     "Microsoft.Extensions.Logging.Console": "1.1.0",
     "Microsoft.Extensions.Configuration.Json": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
-    "Microsoft.AspNet.Identity": "3.0.0-rc1-final" //Install-Package Microsoft.AspNet.Identity -Pre
+    "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
+    "Identity.Dapper.SqlServer": "0.3.0-alpha",
+    "Identity.Dapper": "0.3.0-alpha" //Install-Package Microsoft.AspNet.Identity -Pre
   },
 
   "tools": {
