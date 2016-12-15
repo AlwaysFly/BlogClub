@@ -12,7 +12,8 @@
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
     "Identity.Dapper.SqlServer": "0.3.0-alpha",
-    "Identity.Dapper": "0.3.0-alpha" //Install-Package Microsoft.AspNet.Identity -Pre
+    "Identity.Dapper": "0.3.0-alpha",
+    "Microsoft.AspNetCore.StaticFiles": "1.2.0-preview1-22906"
   },
 
   "tools": {
