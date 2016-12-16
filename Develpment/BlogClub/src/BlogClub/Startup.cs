@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Identity.Dapper.SqlServer;
+using Identity.Dapper;
+using Identity.Dapper.Entities;
 
 namespace BlogClub
 {
@@ -31,6 +34,23 @@ namespace BlogClub
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureDapperSqlServerConnectionProvider(Configuration.GetSection("DapperIdentity"))
+                   .ConfigureDapperIdentityCryptography(Configuration.GetSection("DapperIdentityCryptography"));
+
+            //services.ConfigureDapperPostgreSqlConnectionProvider(Configuration.GetSection("DapperIdentity"))
+            //        .ConfigureDapperIdentityCryptography(Configuration.GetSection("DapperIdentityCryptography"));
+
+            services.AddIdentity<DapperIdentityUser, DapperIdentityRole<int>>(x =>
+            {
+                x.Password.RequireDigit = false;
+                x.Password.RequiredLength = 1;
+                x.Password.RequireLowercase = false;
+                x.Password.RequireNonAlphanumeric = false;
+                x.Password.RequireUppercase = false;
+            })
+                    //.AddDapperIdentityForPostgreSql()
+                    .AddDapperIdentityForSqlServer()
+                    .AddDefaultTokenProviders();
             services.AddMvc();
           //  services.AddOptions();
             
@@ -52,6 +72,8 @@ namespace BlogClub
             }
 
             app.UseStaticFiles();
+
+            app.UseIdentity();
 
             app.UseMvc(routes =>
             {
