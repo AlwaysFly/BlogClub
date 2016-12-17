@@ -15,14 +15,14 @@ namespace BlogClub.Web.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "这是一个伟大的胜利.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "来草我们吧.";
 
             return View();
         }
