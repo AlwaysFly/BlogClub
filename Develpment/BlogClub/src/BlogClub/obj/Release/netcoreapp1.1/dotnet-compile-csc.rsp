@@ -10,9 +10,7 @@
 -nologo
 "E:\WEB\BlogClub\Develpment\BlogClub\src\BlogClub\obj\Release\netcoreapp1.1\dotnet-compile.assemblyinfo.cs"
 -out:"E:\WEB\BlogClub\Develpment\BlogClub\src\BlogClub\bin\Release\netcoreapp1.1\BlogClub.dll"
--r:"C:\Users\Rocher\.nuget\packages\Dapper\1.50.0-rc3\lib\netstandard1.3\Dapper.dll"
--r:"C:\Users\Rocher\.nuget\packages\Identity.Dapper\0.3.0-alpha\lib\netstandard1.5\Identity.Dapper.dll"
--r:"C:\Users\Rocher\.nuget\packages\Identity.Dapper.SqlServer\0.3.0-alpha\lib\netstandard1.5\Identity.Dapper.SqlServer.dll"
+-r:"C:\Users\Rocher\.nuget\packages\Dapper\1.50.0\lib\netstandard1.3\Dapper.dll"
 -r:"C:\Users\Rocher\.nuget\packages\Microsoft.AspNet.Authentication\1.0.0-rc1-final\lib\dotnet5.4\Microsoft.AspNet.Authentication.dll"
 -r:"C:\Users\Rocher\.nuget\packages\Microsoft.AspNet.Authentication.Cookies\1.0.0-rc1-final\lib\dotnet5.4\Microsoft.AspNet.Authentication.Cookies.dll"
 -r:"C:\Users\Rocher\.nuget\packages\Microsoft.AspNet.Cryptography.Internal\1.0.0-rc1-final\lib\dotnet5.4\Microsoft.AspNet.Cryptography.Internal.dll"
@@ -204,6 +202,8 @@
 -r:"C:\Users\Rocher\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\Rocher\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll"
 -r:"E:\WEB\BlogClub\Develpment\BlogClub\BlogClub.Center.Entity\bin\Release\netstandard1.6\BlogClub.Center.Entity.dll"
+-r:"E:\WEB\BlogClub\Develpment\BlogClub\Identity.Dapper\bin\Release\netstandard1.5\Identity.Dapper.dll"
+-r:"E:\WEB\BlogClub\Develpment\BlogClub\Identity.Dapper.SqlServer\bin\Release\netstandard1.5\Identity.Dapper.SqlServer.dll"
 -resource:"E:\WEB\BlogClub\Develpment\BlogClub\src\BlogClub\obj\Release\netcoreapp1.1\BlogClubdotnet-compile.deps.json",BlogClub.deps.json
 "E:\WEB\BlogClub\Develpment\BlogClub\src\BlogClub\Program.cs"
 "E:\WEB\BlogClub\Develpment\BlogClub\src\BlogClub\Startup.cs"

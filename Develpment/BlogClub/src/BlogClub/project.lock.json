@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "Dapper/1.50.0-rc3": {
+      "Dapper/1.50.0": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -30,44 +30,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper/0.3.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Dapper": "1.50.0-rc3",
-          "Microsoft.AspNetCore.Identity": "1.0.0",
-          "Microsoft.CSharp": "4.0.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.0",
-          "System.Data.Common": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Security.Cryptography.Algorithms": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.5/Identity.Dapper.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.5/Identity.Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper.SqlServer/0.3.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Identity.Dapper": "0.3.0-alpha",
-          "Microsoft.Extensions.Configuration": "1.0.0",
-          "Microsoft.Extensions.Configuration.Json": "1.0.0",
-          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.0",
-          "System.Data.SqlClient": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.5/Identity.Dapper.SqlServer.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.5/Identity.Dapper.SqlServer.dll": {}
         }
       },
       "Libuv/1.9.1": {
@@ -4213,16 +4175,56 @@
         "runtime": {
           "netstandard1.6/BlogClub.Center.Entity.dll": {}
         }
+      },
+      "Identity.Dapper/0.3.0-alpha": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.5",
+        "dependencies": {
+          "Dapper": "1.50.0",
+          "Microsoft.AspNetCore.Identity": "1.0.0",
+          "Microsoft.CSharp": "4.0.1",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "System.Data.Common": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0"
+        },
+        "compile": {
+          "netstandard1.5/Identity.Dapper.dll": {}
+        },
+        "runtime": {
+          "netstandard1.5/Identity.Dapper.dll": {}
+        }
+      },
+      "Identity.Dapper.SqlServer/0.3.0-alpha": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.5",
+        "dependencies": {
+          "Identity.Dapper": "0.3.0-alpha",
+          "Microsoft.Extensions.Configuration": "1.0.0",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "System.Data.SqlClient": "4.1.0"
+        },
+        "compile": {
+          "netstandard1.5/Identity.Dapper.SqlServer.dll": {}
+        },
+        "runtime": {
+          "netstandard1.5/Identity.Dapper.SqlServer.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Dapper/1.50.0-rc3": {
-      "sha512": "hmhnemOE/6weO/SC0QnT1yoY5rTFKaSOGsJuuXf/31JXaMKV7Ut65g6Ynh4BIIhuEp5sVrNz3/8rkSJ6XGYjXQ==",
+    "Dapper/1.50.0": {
+      "sha512": "pHf1WtHEvn82Y/2oB0ZavUuyxDMds+UymoZHtgEW6U2zAQLz0YfjIT8WxkWq+J5Cp7hwqFWb/0LHBMzdxyQu0A==",
       "type": "package",
-      "path": "Dapper/1.50.0-rc3",
+      "path": "Dapper/1.50.0",
       "files": [
-        "Dapper.1.50.0-rc3.nupkg.sha512",
+        "Dapper.1.50.0.nupkg.sha512",
         "Dapper.nuspec",
         "lib/net40/Dapper.dll",
         "lib/net40/Dapper.xml",
@@ -4232,26 +4234,6 @@
         "lib/net451/Dapper.xml",
         "lib/netstandard1.3/Dapper.dll",
         "lib/netstandard1.3/Dapper.xml"
-      ]
-    },
-    "Identity.Dapper/0.3.0-alpha": {
-      "sha512": "cLbcH+gWmTOEALdaCdA63tDXTGYc4ZSPZY54oMYXVvrCjWtwZ6N+eMqi56C4OrtsiudFuDOJdWwNM/WOI4BOpQ==",
-      "type": "package",
-      "path": "Identity.Dapper/0.3.0-alpha",
-      "files": [
-        "Identity.Dapper.0.3.0-alpha.nupkg.sha512",
-        "Identity.Dapper.nuspec",
-        "lib/netstandard1.5/Identity.Dapper.dll"
-      ]
-    },
-    "Identity.Dapper.SqlServer/0.3.0-alpha": {
-      "sha512": "+L8ObiYzfDu/cDzRKBAlLiBDU9liQWl43HhIgEnltotOstosypij5M8XOeJ4KSE/bPA+8Jxc5CcZQXJ7yhAOKA==",
-      "type": "package",
-      "path": "Identity.Dapper.SqlServer/0.3.0-alpha",
-      "files": [
-        "Identity.Dapper.SqlServer.0.3.0-alpha.nupkg.sha512",
-        "Identity.Dapper.SqlServer.nuspec",
-        "lib/netstandard1.5/Identity.Dapper.SqlServer.dll"
       ]
     },
     "Libuv/1.9.1": {
@@ -10805,6 +10787,16 @@
       "type": "project",
       "path": "../../BlogClub.Center.Entity/project.json",
       "msbuildProject": "../../BlogClub.Center.Entity/BlogClub.Center.Entity.xproj"
+    },
+    "Identity.Dapper/0.3.0-alpha": {
+      "type": "project",
+      "path": "../../Identity.Dapper/project.json",
+      "msbuildProject": "../../Identity.Dapper/Identity.Dapper.xproj"
+    },
+    "Identity.Dapper.SqlServer/0.3.0-alpha": {
+      "type": "project",
+      "path": "../../Identity.Dapper.SqlServer/project.json",
+      "msbuildProject": "../../Identity.Dapper.SqlServer/Identity.Dapper.SqlServer.xproj"
     }
   },
   "projectFileDependencyGroups": {

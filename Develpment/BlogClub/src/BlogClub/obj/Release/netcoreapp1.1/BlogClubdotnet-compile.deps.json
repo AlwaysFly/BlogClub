@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1/",
-    "signature": "56a32703cf9bf753a9eb57fb629fd71f2451ae89"
+    "signature": "495967fa0566d1c4349fb4478d84e035d178fb02"
   },
   "compilationOptions": {
     "defines": [
@@ -24,17 +24,17 @@
           "Microsoft.Extensions.Configuration.Json": "1.1.0",
           "Microsoft.AspNetCore.Mvc": "1.1.0",
           "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
-          "Identity.Dapper.SqlServer": "0.3.0-alpha",
-          "Identity.Dapper": "0.3.0-alpha",
           "Microsoft.AspNetCore.StaticFiles": "1.2.0-preview1-22906",
           "BlogClub.Center.Entity": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "Identity.Dapper": "0.3.0-alpha",
+          "Identity.Dapper.SqlServer": "0.3.0-alpha"
         },
         "compile": {
           "BlogClub.dll": {}
         }
       },
-      "Dapper/1.50.0-rc3": {
+      "Dapper/1.50.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
@@ -57,36 +57,6 @@
         },
         "compile": {
           "lib/netstandard1.3/Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper/0.3.0-alpha": {
-        "dependencies": {
-          "Dapper": "1.50.0-rc3",
-          "Microsoft.AspNetCore.Identity": "1.0.0",
-          "Microsoft.CSharp": "4.3.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "System.Data.Common": "4.1.0",
-          "System.Reflection": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.5/Identity.Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper.SqlServer/0.3.0-alpha": {
-        "dependencies": {
-          "Identity.Dapper": "0.3.0-alpha",
-          "Microsoft.Extensions.Configuration": "1.1.0",
-          "Microsoft.Extensions.Configuration.Json": "1.1.0",
-          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.1.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "System.Data.SqlClient": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.5/Identity.Dapper.SqlServer.dll": {}
         }
       },
       "Libuv/1.9.1": {
@@ -3018,6 +2988,36 @@
         "compile": {
           "BlogClub.Center.Entity.dll": {}
         }
+      },
+      "Identity.Dapper/0.3.0-alpha": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Microsoft.AspNetCore.Identity": "1.0.0",
+          "System.Reflection": "4.3.0",
+          "System.Data.Common": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "Dapper": "1.50.0",
+          "Microsoft.CSharp": "4.3.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+        },
+        "compile": {
+          "Identity.Dapper.dll": {}
+        }
+      },
+      "Identity.Dapper.SqlServer/0.3.0-alpha": {
+        "dependencies": {
+          "Identity.Dapper": "0.3.0-alpha",
+          "Microsoft.Extensions.Configuration": "1.1.0",
+          "Microsoft.Extensions.Configuration.Json": "1.1.0",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "1.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Data.SqlClient": "4.1.0"
+        },
+        "compile": {
+          "Identity.Dapper.SqlServer.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v1.1/": {
@@ -3031,17 +3031,17 @@
           "Microsoft.Extensions.Configuration.Json": "1.1.0",
           "Microsoft.AspNetCore.Mvc": "1.1.0",
           "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
-          "Identity.Dapper.SqlServer": "0.3.0-alpha",
-          "Identity.Dapper": "0.3.0-alpha",
           "Microsoft.AspNetCore.StaticFiles": "1.2.0-preview1-22906",
           "BlogClub.Center.Entity": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "Identity.Dapper": "0.3.0-alpha",
+          "Identity.Dapper.SqlServer": "0.3.0-alpha"
         },
         "runtime": {
           "BlogClub.dll": {}
         }
       },
-      "Dapper/1.50.0-rc3": {
+      "Dapper/1.50.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
@@ -3064,36 +3064,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper/0.3.0-alpha": {
-        "dependencies": {
-          "Dapper": "1.50.0-rc3",
-          "Microsoft.AspNetCore.Identity": "1.0.0",
-          "Microsoft.CSharp": "4.3.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "System.Data.Common": "4.1.0",
-          "System.Reflection": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.5/Identity.Dapper.dll": {}
-        }
-      },
-      "Identity.Dapper.SqlServer/0.3.0-alpha": {
-        "dependencies": {
-          "Identity.Dapper": "0.3.0-alpha",
-          "Microsoft.Extensions.Configuration": "1.1.0",
-          "Microsoft.Extensions.Configuration.Json": "1.1.0",
-          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.1.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "System.Data.SqlClient": "4.1.0"
-        },
-        "runtime": {
-          "lib/netstandard1.5/Identity.Dapper.SqlServer.dll": {}
         }
       },
       "Libuv/1.9.1": {
@@ -5902,6 +5872,36 @@
         "runtime": {
           "BlogClub.Center.Entity.dll": {}
         }
+      },
+      "Identity.Dapper/0.3.0-alpha": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Microsoft.AspNetCore.Identity": "1.0.0",
+          "System.Reflection": "4.3.0",
+          "System.Data.Common": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "Dapper": "1.50.0",
+          "Microsoft.CSharp": "4.3.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+        },
+        "runtime": {
+          "Identity.Dapper.dll": {}
+        }
+      },
+      "Identity.Dapper.SqlServer/0.3.0-alpha": {
+        "dependencies": {
+          "Identity.Dapper": "0.3.0-alpha",
+          "Microsoft.Extensions.Configuration": "1.1.0",
+          "Microsoft.Extensions.Configuration.Json": "1.1.0",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "1.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Data.SqlClient": "4.1.0"
+        },
+        "runtime": {
+          "Identity.Dapper.SqlServer.dll": {}
+        }
       }
     }
   },
@@ -5911,20 +5911,10 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Dapper/1.50.0-rc3": {
+    "Dapper/1.50.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hmhnemOE/6weO/SC0QnT1yoY5rTFKaSOGsJuuXf/31JXaMKV7Ut65g6Ynh4BIIhuEp5sVrNz3/8rkSJ6XGYjXQ=="
-    },
-    "Identity.Dapper/0.3.0-alpha": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cLbcH+gWmTOEALdaCdA63tDXTGYc4ZSPZY54oMYXVvrCjWtwZ6N+eMqi56C4OrtsiudFuDOJdWwNM/WOI4BOpQ=="
-    },
-    "Identity.Dapper.SqlServer/0.3.0-alpha": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+L8ObiYzfDu/cDzRKBAlLiBDU9liQWl43HhIgEnltotOstosypij5M8XOeJ4KSE/bPA+8Jxc5CcZQXJ7yhAOKA=="
+      "sha512": "sha512-pHf1WtHEvn82Y/2oB0ZavUuyxDMds+UymoZHtgEW6U2zAQLz0YfjIT8WxkWq+J5Cp7hwqFWb/0LHBMzdxyQu0A=="
     },
     "Libuv/1.9.1": {
       "type": "package",
@@ -7097,6 +7087,16 @@
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
     },
     "BlogClub.Center.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Identity.Dapper/0.3.0-alpha": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Identity.Dapper.SqlServer/0.3.0-alpha": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

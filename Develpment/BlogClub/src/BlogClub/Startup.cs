@@ -20,9 +20,10 @@ namespace BlogClub
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public IConfigurationRoot Configuration { get; set; }
 
-        public Startup()
+        public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
+                    .SetBasePath(env.ContentRootPath)
                 .AddEnvironmentVariables()
                 .AddJsonFile("appsettings.json", optional: true);
 
