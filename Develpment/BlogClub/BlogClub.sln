@@ -32,6 +32,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlogClub.Center.Service", "
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlogClub.Center.Entity", "BlogClub.Center.Entity\BlogClub.Center.Entity.xproj", "{00D25025-3D82-4AB5-8231-61CCCFD5EF97}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlogClub.Web", "BlogClub.Web\BlogClub.Web.xproj", "{BB05E81D-C329-4C28-901A-22305C64E223}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{00D25025-3D82-4AB5-8231-61CCCFD5EF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D25025-3D82-4AB5-8231-61CCCFD5EF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D25025-3D82-4AB5-8231-61CCCFD5EF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB05E81D-C329-4C28-901A-22305C64E223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB05E81D-C329-4C28-901A-22305C64E223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB05E81D-C329-4C28-901A-22305C64E223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB05E81D-C329-4C28-901A-22305C64E223}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,5 +67,6 @@ Global
 		{B10862A4-E16D-4210-949E-67812A943FAF} = {8B6DA06A-BDBD-430D-B0D9-22EC70BB0301}
 		{5E458612-9940-404C-A912-1CAFF2A87B1F} = {6FBFBA68-1535-4B38-BB0D-B5A37FDF669B}
 		{00D25025-3D82-4AB5-8231-61CCCFD5EF97} = {B10862A4-E16D-4210-949E-67812A943FAF}
+		{BB05E81D-C329-4C28-901A-22305C64E223} = {CA08A6B4-A41F-4528-AED2-542059F8FD4A}
 	EndGlobalSection
 EndGlobal
