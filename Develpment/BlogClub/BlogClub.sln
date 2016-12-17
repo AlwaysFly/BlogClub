@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlogClub", "src\BlogClub\BlogClub.xproj", "{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{794CB4AB-7FD4-42BC-91EE-175154DDD443}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogClub.Public", "BlogClub.Public", "{124DE620-3463-48E3-852F-BFD2B581239E}"
@@ -40,10 +38,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B04A024-CA73-4A5B-BCB7-D7CC4595864B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B04A024-CA73-4A5B-BCB7-D7CC4595864B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B04A024-CA73-4A5B-BCB7-D7CC4595864B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,7 +55,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{65FB97D9-E47A-478B-A9A5-891AEDE2B4AB} = {CA08A6B4-A41F-4528-AED2-542059F8FD4A}
 		{124DE620-3463-48E3-852F-BFD2B581239E} = {794CB4AB-7FD4-42BC-91EE-175154DDD443}
 		{6FBFBA68-1535-4B38-BB0D-B5A37FDF669B} = {794CB4AB-7FD4-42BC-91EE-175154DDD443}
 		{5B04A024-CA73-4A5B-BCB7-D7CC4595864B} = {B10862A4-E16D-4210-949E-67812A943FAF}
