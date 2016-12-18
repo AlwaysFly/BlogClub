@@ -22,7 +22,7 @@ namespace BlogClub.Web.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "来草我们吧.";
+            ViewData["Message"] = "和谐社会好.";
 
             return View();
         }
