@@ -1,14 +1,16 @@
-﻿{
+{
   "version": "1.0.0-*",
   "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
+    "Core.Mongo.Provider": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.1"
-    }
+    },
+    "MongoDB.Driver": "2.4.0"
   },
 
   "frameworks": {
