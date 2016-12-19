@@ -1,3 +1,9 @@
 bin
 obj
 .vs
+/Develpment/BlogClub/BlogClub.Center.DataAccess/obj
+/Develpment/BlogClub/BlogClub.Center.DataAccess/bin
+/Develpment/BlogClub/BlogClub.Center.Entity/obj
+/Develpment/BlogClub/BlogClub.Center.Entity/bin
+/Develpment/BlogClub/BlogClub.Center.Service/obj
+/Develpment/BlogClub/BlogClub.Center.Service/bin
