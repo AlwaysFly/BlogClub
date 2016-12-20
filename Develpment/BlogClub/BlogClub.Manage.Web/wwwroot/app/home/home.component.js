@@ -33,8 +33,7 @@ HomeComponent = __decorate([
         templateUrl: "view.html",
         styleUrls: ["style.css"]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof auth_service_1.AuthService !== "undefined" && auth_service_1.AuthService) === "function" && _a || Object])
+    __metadata("design:paramtypes", [auth_service_1.AuthService])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
-var _a;
 //# sourceMappingURL=home.component.js.map

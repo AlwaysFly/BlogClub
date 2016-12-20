@@ -37,8 +37,8 @@ LoginComponent = __decorate([
         templateUrl: "view.html",
         styleUrls: ["style.css"]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof auth_service_1.AuthService !== "undefined" && auth_service_1.AuthService) === "function" && _a || Object, typeof (_b = typeof router_1.Router !== "undefined" && router_1.Router) === "function" && _b || Object])
+    __metadata("design:paramtypes", [auth_service_1.AuthService,
+        router_1.Router])
 ], LoginComponent);
 exports.LoginComponent = LoginComponent;
-var _a, _b;
 //# sourceMappingURL=login.component.js.map
