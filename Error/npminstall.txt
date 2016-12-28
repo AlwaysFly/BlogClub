@@ -1,0 +1,18 @@
+﻿> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v3.13.1/win32-x64-51_binding.node
+Cannot download "https://github.com/sass/node-sass/releases/download/v3.13.1/win32-x64-51_binding.node":
+
+ESOCKETTIMEDOUT
+
+Hint: If github.com is not accessible in your location
+      try setting a proxy via HTTP_PROXY, e.g.
+
+      export HTTP_PROXY=http://example.com:1234
+
+or configure npm proxy via
+
+      npm config set proxy http://example.com:8080
+
+> electron@1.4.13 postinstall E:\WEB\BlogClub\Develpment\BlogClub\BlogClub.Manage.Web\node_modules\electron
+> node install.js
