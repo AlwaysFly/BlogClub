@@ -15,5 +15,9 @@ namespace BlogClub.Manage.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult DashBoard() {
+            return View();
+        }
     }
 }
